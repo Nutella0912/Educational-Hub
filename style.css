@@ -1,0 +1,259 @@
+h1, h2, h3 {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    background-color: #00007c !important;
+}
+/* Target the links directly for color changes */
+.navbar .nav-link, .navbar-text {
+    color: #fffade !important;
+}
+.navbar img {
+    height: 50px;
+    width: 50px;
+}
+/* Section Background */
+#home {
+    background-color: #fffade;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+/* Introduction Styling */
+#home h1 {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    margin-top: 4rem;
+    text-align: center;
+}
+#home p.lead {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+}
+/* Cards Container */
+#cards { 
+    padding: 30px 0; 
+}
+.card { 
+    max-width: 300px;
+    margin: 5rem auto 0 auto;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 80%; 
+    display: flex;
+    flex-direction: column;
+}
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 124, 0.15);
+}
+.card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+.card-text {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+.btn {
+    align-self: center; 
+    width: 100%; 
+}
+.btn-primary {
+    background-color: #00007c;
+    border-color: #00007c;
+}
+.btn-primary:hover {
+    background-color: #00005a;
+    border-color: #00005a;
+}
+
+/* ── CATEGORIES SECTION ── */
+#categories {
+    background-color: #00007c;
+    padding: 60px 0;
+    min-height: 60vh;
+}
+#categories h2 {
+    color: #fffade;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#categories-section {
+    padding: 20px 0;
+}
+/* Category listings */
+#categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+.category-badge {
+    background-color: #fffade;
+    color: #00007c;
+    font-family: "Merriweather", serif;
+    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+.category-badge:hover {
+    background-color: #ffd700;
+    color: #00007c;
+}
+/* Resources */
+#resources {
+    padding: 2rem 0;
+}
+.resource-card {
+    background-color: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,250,222,0.25);
+    border-radius: 10px;
+    padding: 1.5rem;
+    color: #fffade;
+    height: 100%;
+    transition: background-color 0.3s;
+}
+.resource-card:hover {
+    background-color: rgba(255,255,255,0.15);
+}
+.resource-card h5 {
+    font-family: "Merriweather", serif;
+    margin-bottom: 0.5rem;
+}
+.resource-card p {
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+.resource-card .btn {
+    background-color: transparent;
+    border: 1px solid #fffade;
+    color: #fffade;
+    font-size: 0.8rem;
+    margin-top: auto;
+}
+.resource-card .btn:hover {
+    background-color: #fffade;
+    color: #00007c;
+}
+
+/* Carousel */
+.carousel-item img {
+    height: 420px;
+    object-fit: cover;
+    filter: brightness(0.75);
+}
+.carousel-caption h5,
+.carousel-caption p {
+    color: #fffade;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+.carousel-caption h5 {
+    font-family: "Merriweather", serif;
+    font-size: 1.5rem;
+}
+
+/* ── ABOUT SECTION ── */
+#about {
+    background-color: #fffade;
+    padding: 70px 0;
+    min-height: 50vh;
+}
+#about h2 {
+    text-align: center;
+    color: #00007c;
+    margin-bottom: 3rem;
+}
+/* Vision */
+#vision {
+    background-color: #fff;
+    border-left: 5px solid #00007c;
+    border-radius: 6px;
+    padding: 2rem 2.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 18px rgba(0,0,124,0.08);
+}
+#vision h3 {
+    color: #00007c;
+    margin-bottom: 1rem;
+}
+#vision p {
+    font-family: "Merriweather", serif;
+    font-style: italic;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Mission */
+#mission {
+    background-color: #fff;
+    border-left: 5px solid #00007c;
+    border-radius: 6px;
+    padding: 2rem 2.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 18px rgba(0,0,124,0.08);
+}
+#mission h3 {
+    color: #00007c;
+    margin-bottom: 1rem;
+}
+#mission p {
+    font-family: "Merriweather", serif;
+    font-style: italic;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Contact */
+#contact {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 4px 18px rgba(0,0,124,0.08);
+}
+#contact h3 {
+    color: #00007c;
+    margin-bottom: 1.5rem;
+}
+#contact .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: #444;
+}
+#contact .contact-label {
+    font-weight: 600;
+    color: #00007c;
+    min-width: 80px;
+}
+
+/* ── FOOTER ── */
+footer {
+    background-color: #00007c;
+    color: #fffade;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+}
+
+

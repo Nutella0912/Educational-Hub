@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
+	<title>Educational Hub Application</title>
+</head>
+<body>
+
+<!-- ── NAVBAR SECTION ── -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+    	<img src="https://static.wixstatic.com/media/c32f05_4095220a846f4d8e83e470f344f5aa15~mv2.png/v1/fit/w_2500,h_1330,al_c/c32f05_4095220a846f4d8e83e470f344f5aa15~mv2.png" alt="ICC logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#categories">Categories</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+
+      </ul>
+      <span class="navbar-text">
+        Ready to learn?
+      </span>
+    </div>
+  </div>
+</nav>
+<!-- ── NAVBAR END ── -->
+
+
+<!-- ── HOME SECTION ── -->
+<section id="home" class="py-5">
+    <div class="container">
+
+        <div id="introduction">
+            <h1 class="display-4">Unlock Your Potential at ICC</h1>
+            <p class="lead">Access a world of knowledge with our curated collection of learning materials designed for students, educators, and lifelong learners.</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="cards">
+
+            <div class="col" id="featured">
+                <div class="card h-90 mx-auto">
+                    <img src="https://static.wixstatic.com/media/c32f05_0fdccf9cd15b4705942d9a507a669888~mv2_d_5760_3840_s_4_2.jpg/v1/fill/w_356,h_598,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c32f05_0fdccf9cd15b4705942d9a507a669888~mv2_d_5760_3840_s_4_2.jpg" class="card-img-top" alt="Web Development">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Web Development Masterclass</h5>
+                        <p class="card-text">Build professional websites from scratch. This course covers HTML, CSS, and modern JavaScript frameworks.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalWeb">
+                            View Course Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-90 mx-auto">
+                    <img src="https://static.wixstatic.com/media/c32f05_f8b1e62bb1094c6fa4f07a77f57e6205~mv2_d_5760_3840_s_4_2.jpg/v1/fill/w_356,h_598,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c32f05_f8b1e62bb1094c6fa4f07a77f57e6205~mv2_d_5760_3840_s_4_2.jpg" class="card-img-top" alt="AI Ethics">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Introduction to AI Ethics</h5>
+                        <p class="card-text">Explore the moral implications of AI. Understand bias, privacy, and the future of automation.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAI">
+                            Explore Ethics Module
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-90 mx-auto">
+                    <img src="https://static.wixstatic.com/media/c32f05_6ec47cf9418c4a02bf03d1600ca09d1e~mv2_d_5578_2055_s_2.jpg/v1/fill/w_356,h_599,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c32f05_6ec47cf9418c4a02bf03d1600ca09d1e~mv2_d_5578_2055_s_2.jpg" class="card-img-top" alt="Data Science">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Data Science Toolkit</h5>
+                        <p class="card-text">A hands-on resource featuring Python templates and datasets to help you master statistical analysis.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalData">
+                            Open Toolkit Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="modalWeb" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Web Development Syllabus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                    <ul>
+                        <li>HTML5 &amp; CSS3 Layouts</li>
+                        <li>JavaScript &amp; DOM Logic</li>
+                        <li>Portfolio Deployment</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAI" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">AI Ethics Overview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                    <p>Learn about algorithmic bias, data privacy, and the future of human-AI collaboration.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Access Module</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalData" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Toolkit Contents</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                    <p>Includes 15 Python scripts, 3 curated datasets, and a SQL cheat sheet for beginners.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Download ZIP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ── HOME END ── -->
+
+
+<!-- ── CATEGORIES SECTION ── -->
+<section id="categories">
+
+    <div class="container" id="categories-section">
+        <h2>Browse by Category</h2>
+
+        <!-- Category Listings -->
+        <div id="categories-list">
+            <span class="category-badge">Web Development</span>
+            <span class="category-badge">Artificial Intelligence</span>
+            <span class="category-badge">Data Science</span>
+            <span class="category-badge">Cybersecurity</span>
+            <span class="category-badge">Cloud Computing</span>
+            <span class="category-badge">Digital Marketing</span>
+            <span class="category-badge">UI/UX Design</span>
+            <span class="category-badge">Business &amp; Finance</span>
+        </div>
+
+        <!-- Carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="https://static.wixstatic.com/media/c32f05_0fdccf9cd15b4705942d9a507a669888~mv2_d_5760_3840_s_4_2.jpg/v1/fill/w_356,h_598,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c32f05_0fdccf9cd15b4705942d9a507a669888~mv2_d_5760_3840_s_4_2.jpg" class="d-block w-100" alt="Web Development">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Web Development</h5>
+                        <p>Master the fundamentals of building the modern web.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://static.wixstatic.com/media/c32f05_f8b1e62bb1094c6fa4f07a77f57e6205~mv2_d_5760_3840_s_4_2.jpg/v1/fill/w_356,h_598,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c32f05_f8b1e62bb1094c6fa4f07a77f57e6205~mv2_d_5760_3840_s_4_2.jpg" class="d-block w-100" alt="AI Ethics">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Artificial Intelligence</h5>
+                        <p>Explore ethics, tools, and the future of AI.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://static.wixstatic.com/media/c32f05_6ec47cf9418c4a02bf03d1600ca09d1e~mv2_d_5578_2055_s_2.jpg/v1/fill/w_356,h_599,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c32f05_6ec47cf9418c4a02bf03d1600ca09d1e~mv2_d_5578_2055_s_2.jpg" class="d-block w-100" alt="Data Science">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Data Science</h5>
+                        <p>Turn raw data into meaningful insights.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Sample Resources -->
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-2" id="resources">
+            <div class="col">
+                <div class="resource-card d-flex flex-column">
+                    <h5>HTML &amp; CSS Cheatsheet</h5>
+                    <p>A quick-reference guide covering essential HTML tags and CSS properties for beginners and pros alike.</p>
+                    <button class="btn mt-auto">Download PDF</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="resource-card d-flex flex-column">
+                    <h5>Python for Beginners</h5>
+                    <p>Step-by-step tutorials and exercises to get you coding in Python from day one.</p>
+                    <button class="btn mt-auto">View Resource</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="resource-card d-flex flex-column">
+                    <h5>AI Glossary &amp; Guide</h5>
+                    <p>Demystify machine learning jargon with this comprehensive, beginner-friendly glossary.</p>
+                    <button class="btn mt-auto">Read Online</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- ── CATEGORIES END ── -->
+
+
+<!-- ── ABOUT SECTION ── -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2>About ICC Educational Hub</h2>
+
+        <!-- Vision Statement -->
+        <div id="vision">
+            <h3>Our Vision</h3>
+            <p>
+                "To be the premier digital gateway for academic excellence, fostering a global community where knowledge is accessible, interactive, and transformative for every learner."
+            </p>
+        </div>
+
+        <!-- Mission Statement -->
+        <div id="mission">
+            <h3>Our Mission</h3>
+            <p>
+                At ICC, we believe that education should be accessible, engaging, and relevant for everyone.
+                Our Educational Hub is dedicated to providing high-quality, curated resources that empower
+                students, educators, and lifelong learners to reach their full potential — no matter where
+                they are on their learning journey.
+            </p>
+        </div>
+
+        <!-- Contact Information -->
+        <div id="contact">
+            <h3>Contact Us</h3>
+            <div class="contact-item">
+                <span class="contact-label">Email:</span>
+                <a href="mailto:info@icc.edu">info@icc.edu</a>
+            </div>
+            <div class="contact-item">
+                <span class="contact-label">Phone:</span>
+                <span>+1 (800) 555-0199</span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-label">Address:</span>
+                <span>123 Campus Drive, Illinois, USA</span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-label">Hours:</span>
+                <span>Monday – Friday, 7:00 AM – 5:00 PM</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ── ABOUT END ── -->
+
+
+<!-- ── FOOTER ── -->
+<footer>
+    <p class="mb-0">&copy; 2026 ICC Educational Hub. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
